@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+}
+.header-text{
+    margin-top: 2rem;
+    color: white;
+    font-size: 2rem;
+}
+.input{
+    margin-top: 2rem;
+    border-radius: 0.4rem;
+    padding: 0.4rem;
+    outline: none;
+    border: 1px solid black;
+    width: 13rem;
+    box-shadow: 0 0 15px black;
+}
+.list{
+    overflow-y:auto;
+    margin-top: 2rem;
+    width: 40%;
+    height: 25rem;
+    background: white;
+    border: 1px solid black;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px black;
+    padding: 1rem;
+}
+.todo{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gray;
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    &:not(:first-child){
+        margin-top: 1rem;
+    }
+}
+.todo-text{
+    overflow-x: auto;
+    text-transform: capitalize;
+}
+.todo_c{
+    overflow-x: auto;
+    text-transform:capitalize;
+    text-decoration: line-through;
+}
+.todo-tic{
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: 300ms ease;
+    &:hover{
+        color: seagreen;
+        transform: scale(1.2);
+    }
+}
+.todo-trash{
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-bottom: 0.15rem;
+    transition: 300ms ease;
+    &:hover{
+        color: #b21f1f;
+        transform: scale(1.2);
+    }
+}
