@@ -76,3 +76,9 @@
         transform: scale(1.2);
     }
 }
+@media screen and (max-width:768px) {
+    .list{
+        width: 70%;
+    }
+    
+}

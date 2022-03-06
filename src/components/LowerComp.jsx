@@ -10,7 +10,14 @@ const LowerComp = () => {
             if(ref.current)
             {
                 setTimeout(() => {
-                    setTodo(JSON.parse(localStorage.getItem("todo")));
+                    var localTodo =JSON.parse(localStorage.getItem("todo"));
+                    if(localTodo==null)
+                    {
+                        setTodo([]);
+                    }
+                    else{
+                        setTodo(localTodo);
+                    }
                     ref.current =false;
                 }, 50);
             }
